@@ -33,7 +33,7 @@
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
-# 📖 [Books-store] <a name="about-project"></a>
+# 📖 [SpaceX-project] <a name="about-project"></a>
 
 *[SpaceX-project]* a WebApp that shows three pages: rockets, missions and My profile. here, users can reserve rockets and join spacial missions with spaceX company.
 <div align="center">
