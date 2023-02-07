@@ -107,3 +107,11 @@ padding-bottom:5%;
   .inactive {
     display:none;
   }
+
+  .profilediv {
+    gap: 20%;
+    justify-content: center;
+  }
+
+
+
