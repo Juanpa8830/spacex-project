@@ -1,25 +1,25 @@
 
 * {
-margin:0;
-padding:0
+  margin: 0;
+  padding: 0;
 }
 
 #flex {
-  display:flex;
+  display: flex;
 }
 
 .nav {
-padding-left: 10%;
-padding-right: 15%;
-align-items: center;
-height: 12vh;
-border-bottom: 2px solid rgb(186, 185, 185);
-justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 15%;
+  align-items: center;
+  height: 12vh;
+  border-bottom: 2px solid rgb(186, 185, 185);
+  justify-content: space-between;
 }
 
 .navtitle {
   font-size: 30px;
- }
+}
 
 .navleft {
   gap: 15px;
@@ -31,7 +31,7 @@ justify-content: space-between;
   list-style: none;
   color: black;
   font-size: 20px;
-  gap:15px;
+  gap: 15px;
 }
 
 .vert-div {
@@ -42,33 +42,36 @@ justify-content: space-between;
   background-color: #484848;
 }
 
-.listLink1, .listLink2, .listLink3 {
-  color:blue;
+.listLink1,
+.listLink2,
+.listLink3 {
+  color: blue;
   text-decoration: none;
- }
- .listLink1:focus,
- .listLink2:focus,
- .listLink3:focus {
+}
+
+.listLink1:focus,
+.listLink2:focus,
+.listLink3:focus {
   text-decoration: underline;
- }
+}
 
 .container {
-padding-left: 10%;
-padding-right: 15%;
-padding-top: 5%;
-padding-bottom:5%;
+  padding-left: 10%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .rocketlist {
   flex-direction: column;
   gap: 20px;
-
 }
 
 .rocketitem {
-  border: 1px solid rgba(230, 229, 229,0.5);
+  border: 1px solid rgba(230, 229, 229, 0.5);
   gap: 20px;
 }
+
 .rocketright {
   flex-direction: column;
   gap: 10px;
@@ -76,42 +79,38 @@ padding-bottom:5%;
 
 .reserve {
   background-color: white;
-  width:50px; 
   border: 2px solid gray;
   color: rgb(157, 155, 155);
-  width:20%; 
-  height:15%;
+  width: 20%;
+  height: 15%;
   margin-top: 20px;
   font-size: 15px;
 }
 
 .cancel {
   background-color: blue;
-  color:white;
-  width:20%; 
-  height:15%;
+  color: white;
+  width: 20%;
+  height: 15%;
   font-size: 15px;
   margin-top: 20px;
   border: none;
 }
 
 .active {
-  display:block;
+  display: block;
   background-color: rgb(22, 157, 62);
-  color:white;
+  color: white;
   height: 20px;
   margin-right: 5px;
   align-content: center;
-  }
+}
 
-  .inactive {
-    display:none;
-  }
+.inactive {
+  display: none;
+}
 
-  .profilediv {
-    gap: 20%;
-    justify-content: center;
-  }
-
-
-
+.profilediv {
+  gap: 20%;
+  justify-content: center;
+}
