@@ -1,26 +1,107 @@
-.App {
-  text-align: center;
+
+* {
+margin:0;
+padding:0
 }
 
-.d-inline-block {
-  display: inline-block!important;
+#flex {
+  display:flex;
+}
+
+.nav {
+padding-left: 10%;
+padding-right: 15%;
+align-items: center;
+height: 12vh;
+border-bottom: 2px solid rgb(186, 185, 185);
+justify-content: space-between;
+}
+
+.navtitle {
+  font-size: 30px;
+ }
+
+.navleft {
+  gap: 15px;
+  align-items: center;
+}
+
+.navlist {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  gap:15px;
+}
+
+.vert-div {
+  width: 0.125rem;
+  height: 1.275rem;
+  margin: 0 0.688rem 0 0.938rem;
+  padding-top: 1.5%;
+  background-color: #484848;
+}
+
+.listLink1, .listLink2, .listLink3 {
+  color:blue;
+  text-decoration: none;
+ }
+ .listLink1:focus,
+ .listLink2:focus,
+ .listLink3:focus {
+  text-decoration: underline;
+ }
+
+.container {
+padding-left: 10%;
+padding-right: 15%;
+padding-top: 5%;
+padding-bottom:5%;
+}
+
+.rocketlist {
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.rocketitem {
+  border: 1px solid rgba(230, 229, 229,0.5);
+  gap: 20px;
+}
+.rocketright {
+  flex-direction: column;
+  gap: 10px;
 }
 
 .reserve {
-  background-color: rgb(64, 181, 181);
-  color:white;
+  background-color: white;
+  width:50px; 
+  border: 2px solid gray;
+  color: rgb(157, 155, 155);
+  width:20%; 
+  height:15%;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .cancel {
-  background-color: rgb(66, 68, 68);
+  background-color: blue;
   color:white;
+  width:20%; 
+  height:15%;
+  font-size: 15px;
+  margin-top: 20px;
+  border: none;
 }
 
 .active {
   display:block;
-  background-color: red;
+  background-color: rgb(22, 157, 62);
   color:white;
-  width: 80px;  
+  height: 20px;
+  margin-right: 5px;
+  align-content: center;
   }
 
   .inactive {
