@@ -5,7 +5,6 @@ import rocketsReducer from './rockets/Rocket';
 const rootReducer = {
   Rockets: rocketsReducer,
   // Missions: missionsReducer,
-  // MyProfile: myProfileReducer
 };
 
 const store = configureStore({ reducer: rootReducer });// la nueva sintaxis de configureStore
