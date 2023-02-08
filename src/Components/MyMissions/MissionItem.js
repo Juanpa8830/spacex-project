@@ -15,22 +15,23 @@ const MissionItem = (props) => {
   };
 
   return (
-    <tr>
-      <td className="tablename">{name}</td>
-      <td className="tabledescription">{description}</td>
-      <td className="tablespan">
-        <span className={joined ? 'Activemember' : 'notamember'}>
-          {joined ? 'Active Member' : 'NOT A MEMBER'}
-        </span>
-      </td>
-      <td className="tablebutton">
-        <button type="button" id={id} onClick={onClick} className={joined ? 'Leavemission' : 'Joinmission'}>
-          {joined ? 'Leave Mission' : 'Join Mission'}
-        </button>
-      </td>
+    <tbody>
+      <tr>
+        <td className="tablename">{name}</td>
+        <td className="tabledescription">{description}</td>
+        <td className="tablespan">
+          <span className={joined ? 'Activemember' : 'notamember'}>
+            {joined ? 'Active Member' : 'NOT A MEMBER'}
+          </span>
+        </td>
+        <td className="tablebutton">
+          <button type="button" id={id} onClick={onClick} className={joined ? 'Leavemission' : 'Joinmission'}>
+            {joined ? 'Leave Mission' : 'Join Mission'}
+          </button>
+        </td>
 
-    </tr>
-
+      </tr>
+    </tbody>
   );
 };
 

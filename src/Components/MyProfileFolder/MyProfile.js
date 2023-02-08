@@ -9,7 +9,7 @@ const MyProfile = () => {
   return (
     <div className="container">
       <div className="profilediv" id="flex">
-        <div className="<joinedmissions">
+        <div className="joinedmissions">
           <h1>My Missions</h1>
 
           {missions.filter((item) => item.joined === true).length === 0 ? (
@@ -32,7 +32,7 @@ const MyProfile = () => {
             )}
 
         </div>
-        <div className="<resrockets">
+        <div className="resrockets">
           <h1>My rockets</h1>
 
           {rockets.filter((item) => item.reserved === true).length === 0 ? (
