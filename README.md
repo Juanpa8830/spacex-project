@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<div align="center">
+<div alignitems="center">
 
   <img src="./src/images/rocketIcon.png" alt="logo" width="180"  height="auto" />
   <br/>
@@ -39,6 +39,7 @@
 <div align="center">
 
   <img src="./src/images/Screenshotrockets.png" alt="Spacex-project" width="750"  height="auto" />
+
   <img src="./src/images/Screenshotmissions.png" alt="Spacex-project2" width="750"  height="auto" />
 
   <br/>
