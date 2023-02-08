@@ -24,7 +24,7 @@ function App() {
           <li className="listItem"><Link className="listLink1" to="/">Rockets</Link></li>
           <li className="listItem"><Link className="listLink2" to="/Pages/Missions">Missions</Link></li>
           <div className="vert-div" />
-          <li className="listItem"><Link className="listLink2" to="/Pages/MyProfilepage">My profile</Link></li>
+          <li className="listItem"><Link className="listLink3" to="/Pages/MyProfilepage">My profile</Link></li>
         </ul>
       </nav>
 

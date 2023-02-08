@@ -1,42 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getApiMission } from '../../redux/missions/Mission';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux'; // se usa para acceder al estado en el store
 import MissionItem from './MissionItem';
+import { getApiMission } from '../../redux/missions/Mission';
 
+let flag = false;
 const MissionList = () => {
   const dispatch = useDispatch();
-  const [loading, setLoading] = useState(true);
 
+  // useEffect, detecta cambios de estado y renderiza. en este caso solo lo hace una vez.
   useEffect(() => {
-    dispatch(getApiMission()).then(() => setLoading(false));
-  }, [dispatch]);
+    if (flag === false) {
+      dispatch(getApiMission());
+      flag = true;
+    }
+  }, []);
 
   const missions = useSelector((state) => state.Missions);
 
   return (
     <div className="container">
-      {loading ? (
-        <div>Loading...</div>
-      ) : (
-        <ul className="rocketlist" id="flex">
-          {missions.map((mission) => {
-            const {
-              id, name, description, joined,
-            } = mission;
-            const uniqueId = `${Date.now()}-${Math.random()}`;
+      <table className="tg">
+        <tr>
+          <th className="tg-0lax">Mission</th>
+          <th className="tg-0lax">Description</th>
+          <th className="tg-0lax">Status</th>
+          <th className="tg-0lax" aria-label="empty" />
+        </tr>
 
-            return (
-              <MissionItem
-                key={uniqueId}
-                id={id}
-                name={name}
-                description={description}
-                joined={joined}
-              />
-            );
-          })}
-        </ul>
-      )}
+        {missions.map((mission) => {
+          const {
+            id, name, description, joined,
+          } = mission;
+
+          return (
+
+            <MissionItem
+              key="mission"
+              id={id}
+              name={name}
+              description={description}
+              joined={joined}
+            />
+          );
+        })}
+      </table>
     </div>
   );
 };

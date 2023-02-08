@@ -2,14 +2,14 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const GET_MISSION_DATA = 'GET_MISSION_DATA';
-const RESERVE_MISSION = 'RESERVE_MISSION';
+const JOIN_MISSION = 'JOIN_MISSION';
 const missionUrl = 'https://api.spacexdata.com/v3/missions';
 
 const missionsReducer = (state = [], action) => {
   switch (action.type) {
     case `${GET_MISSION_DATA}/fulfilled`:
       return action.payload;
-    case RESERVE_MISSION:
+    case JOIN_MISSION:
       return state.map((mission) => {
         if (mission.id === action.payload) {
           return {
@@ -38,9 +38,9 @@ export const getApiMission = createAsyncThunk(GET_MISSION_DATA,
     return missionObj;
   }));
 
-export const ReserveMission = (id) => (
+export const JoinMision = (id) => (
   {
-    type: RESERVE_MISSION,
+    type: JOIN_MISSION,
     payload: id,
   }
 );
