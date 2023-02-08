@@ -13,7 +13,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Books-store\] ](#-SpaceX-Project-)
+- [📖 \[SpaceX-Project\] ](#-SpaceX-Project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -139,7 +139,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] *Add some popular quotes.*
+- [ ] *Add dragons Section.*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
