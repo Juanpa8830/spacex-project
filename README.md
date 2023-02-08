@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./images/rocketicon.PNG" alt="logo" width="180"  height="auto" />
+  <img src="./images/rocketicon.png" alt="logo" width="180"  height="auto" />
   <br/>
 
   <h3><b>SpaceX-project</b></h3>
@@ -38,8 +38,8 @@
 *[SpaceX-project]* a WebApp that shows three pages: rockets, missions and My profile. here, users can reserve rockets and join spacial missions with spaceX company.
 <div align="center">
 
-  <img src="./src/images/Screenshotrockets.PNG" alt="bookstore" width="750"  height="auto" />
-  <img src="./src/images/Screenshotmissions.PNG" alt="bookstore" width="750"  height="auto" />
+  <img src="./src/images/Screenshotrockets.png" alt="bookstore" width="750"  height="auto" />
+  <img src="./src/images/Screenshotmissions.png" alt="bookstore" width="750"  height="auto" />
 
   <br/>
 
