@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'; // ya trae la config del combine reducer y del createStore
 
 import rocketsReducer from './rockets/Rocket';
+import missionsReducer from './missions/Mission';
 
 const rootReducer = {
   Rockets: rocketsReducer,
-  // Missions: missionsReducer,
+  Missions: missionsReducer,
 };
 
 const store = configureStore({ reducer: rootReducer });// la nueva sintaxis de configureStore
