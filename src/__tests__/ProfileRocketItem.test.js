@@ -14,8 +14,8 @@ describe('Testing page deployment', () => {
     const tree = render(
       <Provider store={store}>
         <ul>
-        <ProfileRocketItem props={testData}/>
-    </ul>
+          <ProfileRocketItem props={testData} />
+        </ul>
       </Provider>,
     );
     expect(tree).toMatchSnapshot();

@@ -13,9 +13,9 @@ describe('Testing page deployment', () => {
   test('Mission components matches snapshot', () => {
     const tree = render(
       <Provider store={store}>
-           <ul>
-            <ProfileMissionItem props={testData} />
-            </ul>
+        <ul>
+          <ProfileMissionItem props={testData} />
+        </ul>
       </Provider>,
     );
     expect(tree).toMatchSnapshot();
