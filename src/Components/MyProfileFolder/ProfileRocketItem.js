@@ -17,5 +17,9 @@ const ProfileRocketItem = (props) => {
 export default ProfileRocketItem;
 
 ProfileRocketItem.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
+};
+
+ProfileRocketItem.defaultProps = {
+  name: '',
 };

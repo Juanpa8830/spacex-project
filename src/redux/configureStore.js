@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit'; // ya trae la config del comb
 import rocketsReducer from './rockets/Rocket';
 import missionsReducer from './missions/Mission';
 
-const rootReducer = {
+export const rootReducer = {
   Rockets: rocketsReducer,
   Missions: missionsReducer,
 };

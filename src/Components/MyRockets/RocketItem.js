@@ -36,9 +36,17 @@ const RocketItem = (props) => {
 export default RocketItem;
 
 RocketItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
-  flickrImage: PropTypes.string.isRequired,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  reserved: PropTypes.bool,
+  flickrImage: PropTypes.string,
+};
+
+RocketItem.defaultProps = {
+  id: '',
+  name: '',
+  description: '',
+  reserved: false,
+  flickrImage: '',
 };
