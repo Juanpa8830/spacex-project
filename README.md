@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="./src/images/rocketicon.png" alt="logo" width="180"  height="auto" />
+  <img src="rocketicon.png" alt="logo" width="180"  height="auto" />
   <br/>
 
   <h3><b>SpaceX-project</b></h3>
