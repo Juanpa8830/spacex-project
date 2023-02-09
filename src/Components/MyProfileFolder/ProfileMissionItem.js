@@ -17,5 +17,9 @@ const ProfileMissionItem = (props) => {
 export default ProfileMissionItem;
 
 ProfileMissionItem.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
+};
+
+ProfileMissionItem.defaultProps = {
+  name: '',
 };

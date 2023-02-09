@@ -110,8 +110,7 @@
 }
 
 .profilediv {
-  gap: 10%;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .tg-0lax {
@@ -136,7 +135,7 @@
   margin-left: 10px;
 }
 
-table tr:nth-child(even) {
+tbody:nth-child(even) {
   background-color: rgba(195, 197, 200, 0.7);
 }
 
@@ -185,20 +184,25 @@ table tr:nth-child(even) {
   padding-right: 2px;
 }
 
-.joinedmissions,
 .resrockets {
   width: 50%;
+}
+
+.joinedmissions {
+  width: 50%;
+  margin-right: 20px;
 }
 
 .missionlist,
 .rocketlisted {
   flex-direction: column;
-  border: 1px solid gray;
+  border: 1px solid rgba(195, 197, 200, 0.7);
   width: 100%;
+  margin-top: 20px;
 }
 
 .profrocketitem,
 .profMissionitem {
-  border: 1px solid gray;
+  border: 1px solid rgba(195, 197, 200, 0.7);
   width: 100%;
 }
