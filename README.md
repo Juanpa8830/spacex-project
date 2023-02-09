@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://books-store-8hzd.onrender.com" target="_blank" rel="noopener noreferrer">Books-store - Live Demo</a>
+- <a href="https://books-store-8hzd.onrender.com" target="_blank" rel="noopener noreferrer">SpaceX-project - Live Demo</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
