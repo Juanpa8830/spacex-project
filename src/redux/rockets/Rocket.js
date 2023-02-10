@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const GET_DATA = 'GET_DATA';
 const RESERVE_ROCKET = 'RESERVE_ROCKET';
+const CANCEL_ROCKET_RESERVE = 'CANCEL_ROCKET_RESERVE';
 const rocketsUrl = 'https://api.spacexdata.com/v4/rockets';
 
 const rocketsReducer = (state = [], action) => {
@@ -14,7 +15,17 @@ const rocketsReducer = (state = [], action) => {
         if (rocket.id === action.payload) {
           return {
             ...rocket,
-            reserved: !rocket.reserved,
+            reserved: true,
+          };
+        }
+        return rocket;
+      });
+    case CANCEL_ROCKET_RESERVE:
+      return state.map((rocket) => {
+        if (rocket.id === action.payload) {
+          return {
+            ...rocket,
+            reserved: false,
           };
         }
         return rocket;
@@ -42,6 +53,13 @@ export const getApiRockets = createAsyncThunk(GET_DATA,
 export const ReserveRocket = (id) => (
   {
     type: RESERVE_ROCKET,
+    payload: id,
+  }
+);
+
+export const CancelReservedRocket = (id) => (
+  {
+    type: CANCEL_ROCKET_RESERVE,
     payload: id,
   }
 );

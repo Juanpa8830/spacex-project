@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const GET_MISSION_DATA = 'GET_MISSION_DATA';
 const JOIN_MISSION = 'JOIN_MISSION';
+const LEAVE_MISSION = 'LEAVE_MISSION';
 const missionUrl = 'https://api.spacexdata.com/v3/missions';
 
 const missionsReducer = (state = [], action) => {
@@ -14,7 +15,17 @@ const missionsReducer = (state = [], action) => {
         if (mission.id === action.payload) {
           return {
             ...mission,
-            joined: !mission.joined,
+            joined: true,
+          };
+        }
+        return mission;
+      });
+    case LEAVE_MISSION:
+      return state.map((mission) => {
+        if (mission.id === action.payload) {
+          return {
+            ...mission,
+            joined: false,
           };
         }
         return mission;
@@ -41,6 +52,13 @@ export const getApiMission = createAsyncThunk(GET_MISSION_DATA,
 export const JoinMision = (id) => (
   {
     type: JOIN_MISSION,
+    payload: id,
+  }
+);
+
+export const LeaveMision = (id) => (
+  {
+    type: LEAVE_MISSION,
     payload: id,
   }
 );
