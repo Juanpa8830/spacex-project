@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#flex {
+  display: flex;
+}
+
+.nav {
+  padding-left: 10%;
+  padding-right: 15%;
+  align-items: center;
+  height: 12vh;
+  border-bottom: 2px solid rgb(186, 185, 185);
+  justify-content: space-between;
+}
+
+.navtitle {
+  font-size: 30px;
+}
+
+.navleft {
+  gap: 15px;
+  align-items: center;
+}
+
+.navlist {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.vert-div {
+  width: 0.125rem;
+  height: 1.275rem;
+  margin: 0 0.688rem 0 0.938rem;
+  padding-top: 1.5%;
+  background-color: #484848;
+}
+
+.listLink1,
+.listLink2,
+.listLink3 {
+  color: blue;
+  text-decoration: none;
+}
+
+.listLink1:focus,
+.listLink2:focus,
+.listLink3:focus {
+  text-decoration: underline;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.rocketlist {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rocketitem {
+  border: 1px solid rgba(230, 229, 229, 0.5);
+  gap: 20px;
+}
+
+.rocketright {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: initial;
+}
+
+.cancel {
+  background-color: blue;
+  color: white;
+  width: 20%;
+  height: 15%;
+  font-size: 15px;
+  border: none;
+  margin-top: 10px;
+}
+
+.reserve {
+  background-color: white;
+  border: 2px solid gray;
+  color: rgb(157, 155, 155);
+  width: 20%;
+  height: 15%;
+  margin-top: 20px;
+}
+
+.active {
+  display: block;
+  background-color: rgb(22, 157, 62);
+  color: white;
+  height: 20px;
+  margin-right: 5px;
+  align-content: center;
+}
+
+.inactive {
+  display: block;
+  background-color: rgb(231, 40, 27);
+  color: white;
+  height: 40px;
+  margin-right: 5px;
+  align-content: center;
+}
+
+.profilediv {
+  justify-content: space-between;
+}
+
+.tg-0lax {
+  border: 1px solid rgb(157, 155, 155);
+}
+
+.Joinmission {
+  border: 2px solid rgb(157, 155, 155);
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.Leavemission {
+  color: rgb(233, 56, 56);
+  background-color: white;
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+  border: 1px solid rgb(233, 56, 56);
+  margin-left: 10px;
+}
+
+tbody:nth-child(even) {
+  background-color: rgba(195, 197, 200, 0.7);
+}
+
+.tablename {
+  margin: 0;
+  font-weight: bold;
+  border: 1px solid rgb(157, 155, 155);
+  align-items: flex-start;
+  width: 15%;
+}
+
+.tabledescription {
+  width: 55%;
+  margin: 0;
+  border: 1px solid rgb(212, 211, 211);
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.tablespan {
+  padding-left: 40px;
+  border: 1px solid rgb(157, 155, 155);
+}
+
+.tablebutton {
+  margin: 0;
+  border: 1px solid rgb(157, 155, 155);
+  align-items: flex-start;
+}
+
+.Activemember {
+  background-color: rgb(25, 147, 181);
+  color: white;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 13px;
+}
+
+.notamember {
+  background-color: rgb(122, 124, 128);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.resrockets {
+  width: 50%;
+}
+
+.joinedmissions {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.missionlist,
+.rocketlisted {
+  flex-direction: column;
+  border: 1px solid rgba(195, 197, 200, 0.7);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profrocketitem,
+.profMissionitem {
+  border: 1px solid rgba(195, 197, 200, 0.7);
+  width: 100%;
+}
