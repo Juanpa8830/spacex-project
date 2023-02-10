@@ -76,14 +76,12 @@
   gap: 10px;
 }
 
-.reserve {
-  background-color: white;
-  border: 2px solid gray;
-  color: rgb(157, 155, 155);
-  width: 20%;
-  height: 15%;
-  margin-top: 20px;
-  font-size: 15px;
+.hidden {
+  display: none;
+}
+
+.block {
+  display: initial;
 }
 
 .cancel {
@@ -92,8 +90,17 @@
   width: 20%;
   height: 15%;
   font-size: 15px;
-  margin-top: 20px;
   border: none;
+  margin-top: 10px;
+}
+
+.reserve {
+  background-color: white;
+  border: 2px solid gray;
+  color: rgb(157, 155, 155);
+  width: 20%;
+  height: 15%;
+  margin-top: 20px;
 }
 
 .active {
@@ -106,7 +113,12 @@
 }
 
 .inactive {
-  display: none;
+  display: block;
+  background-color: rgb(231, 40, 27);
+  color: white;
+  height: 40px;
+  margin-right: 5px;
+  align-content: center;
 }
 
 .profilediv {
